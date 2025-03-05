@@ -22,7 +22,7 @@ pipeline {
                 sh 'docker tag jenkins-ci:latest 296945066713.dkr.ecr.us-east-1.amazonaws.com/jenkins-ci:latest'
             }
         }
-        stage('pushImage')
+        stage('pushImage'){
             steps{
                 sh 'docker push 296945066713.dkr.ecr.us-east-1.amazonaws.com/jenkins-ci:latest'
             }
