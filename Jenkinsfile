@@ -27,4 +27,5 @@ pipeline {
                 sh 'docker push 296945066713.dkr.ecr.us-east-1.amazonaws.com/jenkins-ci:latest'
             }
     }
-}
+    }
+    }
